@@ -1,0 +1,72 @@
+The Online Game Database Management System is a relational database project designed to manage game-related data such as player accounts, characters, regions, items, creeps (monsters), and encounters.
+
+This system demonstrates the implementation of:
+            Entity tables
+            Weak entities
+            Relationship tables
+            Primary and Foreign Keys
+            One-to-Many and Many-to-Many relationships
+
+ Database Entities:
+1️. Account
+      - Stores player account details.
+      - AcctName (Primary Key)
+      - Password
+      - Subscriber details
+      - Account creation date
+2️. Character
+       - Stores player characters.
+       - Linked to Account
+       -    Linked to Region
+       Stores level, experience, health, mana
+3️. Region
+      Stores region/environment details.
+      Climate
+      Precipitation
+      Foliage
+4️. Item
+     Stores item types.
+     Item name
+     Item type (Weapon, Armor, etc.)
+     Item damage
+5️. ItemInstantiation
+     Represents items owned by characters.
+6️. Creep
+     Stores monster details.
+7️. CreepInstantiation
+     Represents creeps appearing in regions.
+8️. RanInto
+     Many-to-Many relationship between Character and CreepInstantiation.
+
+ Relationships:
+
+        - One Account → Many Characters
+        - One Region → Many Characters
+        - One Character → Many Items
+        - One Item → Many ItemInstances
+        - One Creep → Many CreepInstances
+        - Many Characters ↔ Many CreepInstances
+
+ Technologies Used:
+           . MySQL
+           . SQL (DDL, DML)
+           . ER Diagram Design
+           . Relational Schema Mapping
+
+ Concepts Implemented:
+
+           . Primary Keys
+           . Foreign Keys
+           . Weak Entities
+           . Many-to-Many Relationships
+           . Composite Primary Keys
+           . Normalization
+
+ How to Run:
+
+           . Create the database in MySQL.
+           . Execute all CREATE TABLE statements.
+           . Insert sample values.
+           .  Run SELECT queries to test relationships.
+
+
