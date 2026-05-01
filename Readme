@@ -5,7 +5,7 @@
    -It demonstrates core DBMS concepts like relationships and normalization.
 
 # Features
-   -Store and manage game details
+   -Store and manage game details 
    -Maintain player information
    -Track scores across games
    -Use SQL JOINs for analysis
